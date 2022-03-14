@@ -29,8 +29,8 @@ public class MainFlip extends BaseClass {
 	System.out.println(text);
 	}
 	
-	//product price
-	List<WebElement> productPrice = driver.findElements(By.xpath("//div[@class='_30jeq3 _1_WHN1']"));
-	int size2 = productPrice.size();
-	System.out.println(size2);
+//	//product price
+//	List<WebElement> productPrice = driver.findElements(By.xpath("//div[@class='_30jeq3 _1_WHN1']"));
+//	int size2 = productPrice.size();
+//	System.out.println(size2);
 }}
