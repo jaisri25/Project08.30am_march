@@ -9,7 +9,7 @@ public class Sample {
 	private void test() {
 System.out.println("test1");
 
-
+System.out.println("test2");
 	}
 
 }
