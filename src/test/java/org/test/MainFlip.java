@@ -9,10 +9,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class MainFlip extends BaseClass {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Throwable {
 		browserLaunch("chrome");
 		urlLaunch("https://www.flipkart.com/");
 		implicitWait(10);
+	Thread.sleep(2000);
 				
 		FlipkartPom f=new FlipkartPom();
 		click(f.getBtnX());
