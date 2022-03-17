@@ -9,8 +9,9 @@ public class Sample {
 		System.out.println("test1");
 
 	
+		System.out.println("test5");
+		System.out.println("test6");
 
-	System.out.println("test4");
 
 	}	
 }
