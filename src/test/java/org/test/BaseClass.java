@@ -17,6 +17,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -129,7 +130,11 @@ public class BaseClass {
 
 	// LOCATORS
 	public static WebElement FindElement(String locatorName, String locValue) {
-		return null;
+		if(locatorName.equals("xpath")) {
+			return driver.findElement(By.xpath(locValue));
+
+		}
+		return  null;
 
 	}
 

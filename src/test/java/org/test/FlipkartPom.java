@@ -19,11 +19,14 @@ public class FlipkartPom extends BaseClass{
 	private WebElement enter;
 
 	
-	@FindBy(xpath="//a[@class='_1LKTO3']")
+	@FindBy(xpath="//span[text()='Next']")
 	private WebElement btnNext;
 
+	@FindBy(xpath="//span[text()='Previous']")
+	private WebElement btnPrevious;
 	
-	
+
+
 	public WebElement getBtnX() {
 		return btnX;
 	}
@@ -41,7 +44,9 @@ public class FlipkartPom extends BaseClass{
 		return btnNext;
 	}
 
-	
+	public WebElement getBtnPrevious() {
+		return btnPrevious;
+	}
 
 
 }
